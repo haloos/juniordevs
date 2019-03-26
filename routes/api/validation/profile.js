@@ -12,19 +12,56 @@ module.exports =  function validatProfileInput(data) {
     errors.handle = 'Handle needs to between 2 and 4 characters';
   } 
 
-  if(Validator.is.Length(data.handle)) {
+  if(Validator.isEmpty(data.handle)) {
     errors.handle = 'Profile handle is required';
   } 
 
-  if(Validator.is.Length(data.status)) {
+  if(Validator.isEmpty(data.status)) {
     errors.status = 'Status field is required';
   }
  
-  if(Validator.is.Length(data.skills)) {
+  if(Validator.isEmpty(data.skills)) {
     errors.skills = 'Skills field is required';
-  }
+  } 
+
+  if(!isEmpty(data.website)){
+    if(!Validator.isURl(data.website)) {
+      errors.website = 'Not a valid URL';
+    }
+  } 
+
+  if(!isEmpty(data.youtube)){
+    if(!Validator.isURl(data.youtube)) {
+      errors.youtube = 'Not a valid URL';
+    }
+  }  
+
+  if(!isEmpty(data.twitter)){
+    if(!Validator.isURl(data.twitter)) {
+      errors.twitter = 'Not a valid URL';
+    }
+  }  
+
+  if(!isEmpty(data.facebook)){
+    if(!Validator.isURl(data.facebook)) {
+      errors.facebook = 'Not a valid URL';
+    }
+  }  
+
+  if(!isEmpty(data.linkedin)){
+    if(!Validator.isURl(data.linkedin)) {
+      errors.linkedin = 'Not a valid URL';
+    }
+  }  
+
+  if(!isEmpty(data.instagram)){
+    if(!Validator.isURl(data.instagram)) {
+      errors.instagram = 'Not a valid URL';
+    }
+  }  
+
   return {
     errors,
     isValid: isEmpty(errors)
-  }
-}
+  };
+};
