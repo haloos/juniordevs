@@ -1,1 +1,1 @@
-<h6>A website for junior developers starting out</h6> 
+<h6><em>A website for junior developers starting out</em></h6> 
