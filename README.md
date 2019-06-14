@@ -1,1 +1,1 @@
-<h1><em>A app for junior developers starting out</em></h1> 
+<h1><em>An app for junior developers</em></h1> 
