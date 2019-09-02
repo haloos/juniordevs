@@ -1,1 +1,1 @@
-<h6><em> junior developers social media</em></h6> 
+<h6><em> junior developer social media</em></h6> 
