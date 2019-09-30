@@ -1,1 +1,1 @@
-<h3><em> A social media for junior developers </em></h3> 
+<h3><em> A social media  sitefor junior developers </em></h3> 
